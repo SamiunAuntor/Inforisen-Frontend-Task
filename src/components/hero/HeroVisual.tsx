@@ -7,11 +7,11 @@ export function HeroVisual() {
     <div className="relative mx-auto h-[500px] w-full max-w-[648px] sm:h-[588px] lg:h-[588px] xl:mx-0 xl:ml-auto xl:w-[648px]">
       <div className="absolute left-[2%] top-[10%] z-20 size-9 sm:-left-[2%] sm:top-[12%] sm:size-10 lg:-left-[13.3%] lg:top-[3.5%]">
         <Image
-          src="/assets/hero/skill-icons_instagram.png"
+          src="/assets/social/instagram.webp"
           alt=""
           fill
           sizes="40px"
-          className="object-contain drop-shadow-sm"
+          className="object-contain opacity-30 drop-shadow-sm"
         />
       </div>
 
