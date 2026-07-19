@@ -3,7 +3,7 @@ import { PromotionCarousel } from "@/components/promotion/PromotionCarousel";
 
 export function PromotionSection() {
   return (
-    <section id="services" className="overflow-hidden bg-[#fff9f3] py-20 sm:py-24 lg:py-[100px]">
+    <section id="promotion" className="overflow-hidden bg-[#fff9f3] py-20 sm:py-24 lg:py-[100px]">
       <Container>
         <div className="mx-auto max-w-[760px] text-center">
           <h2 className="font-outfit text-3xl font-semibold leading-tight tracking-[-0.02em] text-foreground sm:text-[40px] xl:text-5xl">

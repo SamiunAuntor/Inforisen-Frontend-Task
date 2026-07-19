@@ -6,3 +6,13 @@ export type PromotionService = {
   reviews: string;
   rating: number;
 };
+
+export type PlatformService = {
+  id: string;
+  name: string;
+  icon?: string;
+  fallbackIcon?: string;
+  title: string;
+  description: string;
+  image: string;
+};
