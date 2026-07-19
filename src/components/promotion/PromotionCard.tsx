@@ -40,13 +40,15 @@ export function PromotionCard({ service }: PromotionCardProps) {
         <p className="text-[10px] leading-[1.35] text-body-text xl:text-xs">({service.description})</p>
       </div>
 
-      <a
-        href="#contact"
-        className="mt-auto flex h-10 w-full items-center justify-center rounded-full bg-gradient-to-r from-[#f6bd32] via-[#d64a57] to-[#34115d] text-[10px] font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary xl:h-[50px] xl:text-xs"
-        aria-label={`Buy ${service.name} promotion service`}
-      >
-        Buy now
-      </a>
+      <div className="mt-auto w-full pt-4 xl:pt-5">
+        <a
+          href="#contact"
+          className="flex h-10 w-full items-center justify-center rounded-full bg-gradient-to-r from-[#f6bd32] via-[#d64a57] to-[#34115d] text-[10px] font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary xl:h-[50px] xl:text-xs"
+          aria-label={`Buy ${service.name} promotion service`}
+        >
+          Buy now
+        </a>
+      </div>
     </article>
   );
 }
