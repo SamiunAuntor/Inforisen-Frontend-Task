@@ -4,7 +4,7 @@ const avatars = [1, 2, 3, 4];
 
 export function TrustedUsersBadge() {
   return (
-    <div className="h-[76px] w-44 rounded-xl border border-white/70 bg-white/70 px-5 py-3 shadow-[0_8px_20px_rgba(24,16,12,0.22)] backdrop-blur-md">
+    <div className="h-[76px] w-44 rounded-[14px] bg-gradient-to-b from-[#d0cfce]/95 to-[#aaa8a7]/95 px-5 py-3 shadow-[0_8px_20px_rgba(24,16,12,0.22)] backdrop-blur-md">
       <div className="flex -space-x-2">
         {avatars.map((avatar) => (
           <Image
@@ -17,7 +17,9 @@ export function TrustedUsersBadge() {
           />
         ))}
       </div>
-      <p className="mt-2 whitespace-nowrap text-[13px] font-semibold">Trusted by 68K users</p>
+      <p className="mt-2 whitespace-nowrap text-[13px] font-semibold tracking-[-0.01em] text-[#111]">
+        Trusted by 68K users
+      </p>
     </div>
   );
 }

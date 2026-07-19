@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <main id="home" className="relative z-20">
       <Container>
-        <div className="grid items-center gap-10 pb-16 pt-14 md:pb-20 md:pt-20 lg:grid-cols-2 lg:gap-6 lg:pb-24 lg:pt-16 xl:flex xl:justify-between xl:gap-0 xl:pt-[100px]">
+        <div className="grid items-center gap-10 pb-16 pt-14 md:pb-20 md:pt-20 lg:grid-cols-2 lg:gap-6 lg:pb-24 lg:pt-16 xl:grid-cols-[528px_648px] xl:justify-between xl:gap-x-0 xl:pt-[100px]">
           <div className="w-full max-w-[528px] xl:w-[528px] xl:shrink-0">
             <h1 className="max-w-[528px] font-sans text-[clamp(2.35rem,4vw,3rem)] font-bold leading-[1.08] tracking-[-0.025em] text-foreground">
               Grow Faster with SMM PANEL Across Every Social Platform

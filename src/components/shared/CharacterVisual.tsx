@@ -31,7 +31,7 @@ export function CharacterVisual({
         <TrustedUsersBadge />
       </div>
 
-      <div className="absolute bottom-[13.5%] right-[27%] z-40 h-[34%] w-[21%] rotate-[30deg]">
+      <div className="absolute bottom-[10%] right-[22%] z-40 h-[52%] w-[32%] rotate-[30deg]">
         <Image
           src="/assets/hero/rocket.webp"
           alt=""
