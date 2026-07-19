@@ -3,15 +3,15 @@ import type { PlatformService } from "@/types/content";
 const defaultImage = "/assets/services/facebook-service-image.webp";
 
 const platforms = [
-  ["facebook", "Facebook", "/assets/social/facebook.webp"],
-  ["instagram", "Instagram", "/assets/social/instagram.webp"],
-  ["x", "X (Twitter)", "/assets/social/x.webp"],
-  ["youtube", "YouTube", "/assets/social/youtube.webp"],
-  ["tiktok", "TikTok", "/assets/social/tiktok.webp"],
-  ["linkedin", "LinkedIn", "/assets/social/linkedin.webp"],
-  ["telegram", "Telegram", "/assets/social/telegram.webp"],
-  ["discord", "Discord", "/assets/social/discord.webp"],
-  ["spotify", "Spotify", "/assets/social/spotify.webp"],
+  ["facebook", "Facebook", "/assets/services/facebook.png"],
+  ["instagram", "Instagram", "/assets/services/instagram.png"],
+  ["x", "X (Twitter)", "/assets/services/x.png"],
+  ["youtube", "YouTube", "/assets/services/youtube.png"],
+  ["tiktok", "TikTok", "/assets/services/tiktok.png"],
+  ["linkedin", "LinkedIn", "/assets/services/linkedin.png"],
+  ["telegram", "Telegram", "/assets/services/telegram.png"],
+  ["discord", "Discord", "/assets/services/discord.png"],
+  ["spotify", "Spotify", "/assets/services/spotify.png"],
 ] as const;
 
 export const platformServices: PlatformService[] = [
@@ -29,7 +29,7 @@ export const platformServices: PlatformService[] = [
   {
     id: "soundcloud",
     name: "SoundCloud",
-    fallbackIcon: "☁",
+    icon: "/assets/services/cloudflare.png",
     title: "SoundCloud SMM Panel",
     description:
       "Reach more listeners and strengthen your music profile with reliable SoundCloud promotion services for plays, followers, likes, and engagement.",
@@ -38,7 +38,7 @@ export const platformServices: PlatformService[] = [
   {
     id: "snapchat",
     name: "Snapchat",
-    icon: "/assets/social/snapchat.webp",
+    icon: "/assets/services/snapchat.png",
     title: "Snapchat SMM Panel",
     description:
       "Grow your Snapchat audience with dependable promotion services designed to increase reach, engagement, and social credibility.",
@@ -47,7 +47,7 @@ export const platformServices: PlatformService[] = [
   {
     id: "website-traffic",
     name: "Website Traffic",
-    fallbackIcon: "↗",
+    icon: "/assets/services/growth.png",
     title: "Website Traffic Services",
     description:
       "Bring more visitors to your website with targeted traffic services built to improve visibility, reach, and online growth.",

@@ -69,7 +69,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 flex min-h-[70px] items-center justify-center rounded-[20px] border border-white/20 bg-black/35 px-5 py-4 text-center text-sm leading-6 text-white/85 shadow-[0_12px_35px_rgba(0,0,0,0.28)] backdrop-blur-md xl:mt-10">
+        <div className="mt-10 flex min-h-[70px] items-center justify-center rounded-[20px] border border-white/25 bg-white/[0.07] px-5 py-4 text-center text-sm leading-6 text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.14),0_12px_35px_rgba(0,0,0,0.2)] backdrop-blur-[10px] xl:mt-10">
           © 2026 HQ Promo. We are not affiliated with any social media platforms mentioned on this
           website. We only provide social media marketing services.
         </div>

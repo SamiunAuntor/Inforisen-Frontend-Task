@@ -11,7 +11,11 @@ export function ServiceTabs() {
 
   return (
     <>
-      <div role="tablist" aria-label="Social media services" className="mt-12 grid w-full grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+      <div
+        role="tablist"
+        aria-label="Social media services"
+        className="mt-14 grid w-full grid-cols-2 gap-x-3 gap-y-4 sm:grid-cols-3 lg:grid-cols-6"
+      >
         {platformServices.map((service) => {
           const isActive = service.id === activeId;
 
@@ -23,18 +27,22 @@ export function ServiceTabs() {
               id={`service-tab-${service.id}`}
               aria-selected={isActive}
               aria-controls="service-panel"
-              className={`flex h-[42px] items-center justify-center gap-2 rounded-[10px] border px-2 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${isActive ? "border-transparent bg-gradient-to-r from-[#f3b832] via-[#d54a5a] to-[#35125d] text-white shadow-sm" : "border-[#ef8d3d] bg-white text-foreground hover:bg-orange-50"}`}
+              className={`flex h-14 items-center justify-center gap-3 rounded-xl border px-3 py-2 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary lg:text-base ${isActive ? "border-[#efb83a] bg-gradient-to-r from-[#f3bd35] via-[#d44b59] to-[#35125d] text-white shadow-[0_4px_10px_rgba(55,24,45,0.12)]" : "border-[#ef8d3d] bg-white text-foreground hover:bg-orange-50"}`}
               onClick={() => setActiveId(service.id)}
             >
-              <span className="flex size-8 shrink-0 items-center justify-center bg-black/25 [clip-path:polygon(50%_0,93%_25%,93%_75%,50%_100%,7%_75%,7%_25%)]">
-                <span className="flex size-[31px] items-center justify-center bg-white [clip-path:polygon(50%_0,93%_25%,93%_75%,50%_100%,7%_75%,7%_25%)]">
-                  {service.icon ? (
-                    <Image src={service.icon} alt="" width={20} height={20} className="size-5 rounded-md object-cover" />
-                  ) : (
-                    <span aria-hidden="true" className="text-sm text-foreground">{service.fallbackIcon}</span>
-                  )}
+              {service.icon ? (
+                <Image
+                  src={service.icon}
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="size-10 shrink-0 object-contain"
+                />
+              ) : (
+                <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white text-sm text-foreground">
+                  {service.fallbackIcon}
                 </span>
-              </span>
+              )}
               <span className="truncate">{service.name}</span>
             </button>
           );
