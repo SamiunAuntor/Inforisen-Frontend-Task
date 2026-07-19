@@ -6,7 +6,7 @@ import { MobileMenu } from "./MobileMenu";
 
 export function SiteHeader() {
   return (
-    <header className="relative z-30 pt-5 sm:pt-7">
+    <header className="sticky top-0 z-50 pt-5 sm:pt-7">
       <Container>
         <div className="relative flex min-h-20 items-center justify-between rounded-2xl bg-white px-5 shadow-[0_8px_30px_rgba(68,36,20,0.04)] sm:px-7">
           <a

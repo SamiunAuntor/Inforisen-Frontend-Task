@@ -9,21 +9,22 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 
 export default function Home() {
   return (
-    <div className="mx-auto w-full max-w-[var(--page-width)] overflow-hidden bg-[#fff9f3]">
-      <div className="relative overflow-hidden bg-[#fff9f3]">
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0">
-          <Image
-            src="/assets/banner-navbar-bg.png"
-            alt=""
-            fill
-            preload
-            sizes="100vw"
-            className="object-cover object-top"
-          />
-        </div>
-        <SiteHeader />
-        <HeroSection />
+    <div className="relative mx-auto w-full max-w-[var(--page-width)] overflow-x-clip bg-[#fff9f3]">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[1250px] md:h-[1100px] lg:h-[950px] xl:h-[892px]"
+      >
+        <Image
+          src="/assets/banner-navbar-bg.png"
+          alt=""
+          fill
+          preload
+          sizes="100vw"
+          className="object-cover object-top"
+        />
       </div>
+      <SiteHeader />
+      <HeroSection />
       <PromotionSection />
       <AboutSection />
       <ServicesSection />

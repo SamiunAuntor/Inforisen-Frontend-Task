@@ -15,9 +15,12 @@ export function HeroVisual() {
         />
       </div>
 
-      <CharacterVisual className="absolute left-[16%] top-0 w-[124%]" preload />
+      <CharacterVisual
+        className="absolute left-[16%] top-0 w-[124%] origin-center scale-[1.09] xl:left-[21%]"
+        preload
+      />
 
-      <div className="absolute left-[-1%] top-[17%] z-30 scale-[0.82] sm:left-[5%] sm:top-[18%] sm:scale-100">
+      <div className="absolute left-[-1%] top-[17%] z-30 translate-x-5 scale-[0.82] sm:left-[5%] sm:top-[18%] sm:scale-100 xl:left-[5.5%]">
         <GoogleReviewBadge />
       </div>
 
