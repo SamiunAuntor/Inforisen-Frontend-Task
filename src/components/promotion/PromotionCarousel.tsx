@@ -38,7 +38,7 @@ export function PromotionCarousel() {
         className="mx-4 snap-x snap-mandatory overflow-x-auto pb-4 [scrollbar-width:none] md:mx-6 xl:mx-12 [&::-webkit-scrollbar]:hidden"
         onScroll={syncActivePage}
       >
-        <div className="flex w-max min-w-full justify-center gap-5 xl:gap-8">
+        <div className="flex w-max min-w-full justify-center gap-5">
           {promotionServices.map((service) => (
             <PromotionCard key={service.name} service={service} />
           ))}

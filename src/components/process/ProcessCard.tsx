@@ -17,10 +17,10 @@ export function ProcessCard({ item }: ProcessCardProps) {
       </div>
 
       <div
-        className={`relative flex min-h-[360px] flex-col items-center overflow-hidden rounded-[20px] px-8 pb-8 pt-[208px] text-center sm:h-[387px] sm:min-h-0 sm:px-9 ${item.featured ? "border border-transparent bg-[linear-gradient(180deg,#151312_0%,#2b1609_38%,#70330f_68%,#ca6727_100%)] text-white" : "border border-[#dfe0e4] bg-white text-foreground"}`}
+        className={`relative mx-auto flex min-h-[360px] w-full max-w-[318px] flex-col items-center overflow-hidden rounded-[20px] px-8 pb-8 pt-[208px] text-center sm:h-[387px] sm:min-h-0 sm:px-9 ${item.featured ? "border border-transparent bg-[linear-gradient(180deg,#151311_0%,#17100b_35%,#4e260f_65%,#b85b24_100%)] text-white" : "border border-[#dfe0e4] bg-white text-foreground"}`}
       >
         <div
-          className={`pointer-events-none absolute left-1/2 top-[-175px] z-10 h-[360px] w-[520px] -translate-x-1/2 rounded-[50%] ${item.featured ? "bg-[rgba(8,8,8,0.42)]" : "bg-[#f3f3f4]"}`}
+          className={`pointer-events-none absolute left-1/2 top-[-94px] z-10 h-[284px] w-[647px] -translate-x-1/2 rounded-[50%] ${item.featured ? "bg-[rgba(8,8,8,0.42)]" : "bg-[#f3f3f4]"}`}
           aria-hidden="true"
         />
         <Image
@@ -32,7 +32,7 @@ export function ProcessCard({ item }: ProcessCardProps) {
         />
 
         <h3 className="relative z-20 text-xl font-medium leading-[1.5]">{item.title}</h3>
-        <p className={`relative z-20 mt-5 font-geist text-sm leading-[1.4] ${item.featured ? "text-white/90" : "text-body-text"}`}>
+        <p className={`relative z-20 mt-5 max-w-[240px] font-geist text-sm leading-[1.4] ${item.featured ? "text-white/90" : "text-body-text"}`}>
           {item.description}
         </p>
       </div>
