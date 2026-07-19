@@ -4,6 +4,8 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { PromotionSection } from "@/components/sections/PromotionSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
+import { ProcessSection } from "@/components/sections/ProcessSection";
+import { SiteFooter } from "@/components/layout/SiteFooter";
 
 export default function Home() {
   return (
@@ -25,6 +27,8 @@ export default function Home() {
       <PromotionSection />
       <AboutSection />
       <ServicesSection />
+      <ProcessSection />
+      <SiteFooter />
     </div>
   );
 }

@@ -16,3 +16,12 @@ export type PlatformService = {
   description: string;
   image: string;
 };
+
+export type ProcessStep = {
+  step: string;
+  title: string;
+  description: string;
+  icon: "signup" | "funds" | "service" | "order";
+  accent: string;
+  featured?: boolean;
+};
