@@ -1,5 +1,5 @@
+import Image from "next/image";
 import type { ProcessStep } from "@/types/content";
-import { ProcessIcon } from "./ProcessIcon";
 
 type ProcessCardProps = {
   item: ProcessStep;
@@ -7,7 +7,7 @@ type ProcessCardProps = {
 
 export function ProcessCard({ item }: ProcessCardProps) {
   return (
-    <article className="relative pt-[98px]">
+    <article className="relative pt-[98px] transition-transform duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none supports-[hover:hover]:hover:-translate-y-1">
       <div className="absolute left-1/2 top-[35px] z-10 h-16 w-px -translate-x-1/2" style={{ backgroundColor: item.accent }} />
       <div
         className="absolute left-1/2 top-[7px] z-20 flex h-10 w-[84px] -translate-x-1/2 -rotate-[28deg] items-center justify-center rounded-full text-xs font-medium text-white shadow-sm"
@@ -16,16 +16,23 @@ export function ProcessCard({ item }: ProcessCardProps) {
         {item.step}
       </div>
 
-      <div className={`relative flex h-[295px] flex-col items-center overflow-hidden rounded-[20px] border border-black/10 px-7 pb-7 pt-[160px] text-center ${item.featured ? "bg-[linear-gradient(180deg,#171412_0%,#54240c_54%,#d06c28_100%)] text-white" : "bg-white text-foreground"}`}>
-        <div className={`absolute -top-[145px] left-1/2 h-[285px] w-full -translate-x-1/2 rounded-[50%] ${item.featured ? "bg-black/40" : "bg-[#c6c6c6]/20"}`} />
+      <div
+        className={`relative flex min-h-[360px] flex-col items-center overflow-hidden rounded-[20px] px-8 pb-8 pt-[208px] text-center sm:h-[387px] sm:min-h-0 sm:px-9 ${item.featured ? "border border-transparent bg-[linear-gradient(180deg,#151312_0%,#2b1609_38%,#70330f_68%,#ca6727_100%)] text-white" : "border border-[#dfe0e4] bg-white text-foreground"}`}
+      >
         <div
-          className={`absolute top-8 z-10 flex size-16 items-center justify-center [clip-path:polygon(50%_0,93%_25%,93%_75%,50%_100%,7%_75%,7%_25%)] ${item.featured ? "bg-gradient-to-br from-[#f3b933] via-[#db4b5a] to-[#35125d] text-white" : "bg-white text-[#9c244a] shadow-[0_6px_18px_rgba(35,24,20,0.06)]"}`}
-        >
-          <ProcessIcon icon={item.icon} />
-        </div>
+          className={`pointer-events-none absolute left-1/2 top-[-175px] z-10 h-[360px] w-[520px] -translate-x-1/2 rounded-[50%] ${item.featured ? "bg-[rgba(8,8,8,0.42)]" : "bg-[#f3f3f4]"}`}
+          aria-hidden="true"
+        />
+        <Image
+          src={item.icon}
+          alt=""
+          width={84}
+          height={84}
+          className="absolute top-10 z-20 size-[84px] object-contain"
+        />
 
-        <h3 className="relative z-10 text-lg font-medium leading-6">{item.title}</h3>
-        <p className={`relative z-10 mt-4 text-sm leading-5 ${item.featured ? "text-white/95" : "text-body-text"}`}>
+        <h3 className="relative z-20 text-xl font-medium leading-[1.5]">{item.title}</h3>
+        <p className={`relative z-20 mt-5 font-geist text-sm leading-[1.4] ${item.featured ? "text-white/90" : "text-body-text"}`}>
           {item.description}
         </p>
       </div>

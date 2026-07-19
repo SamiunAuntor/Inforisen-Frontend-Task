@@ -21,7 +21,7 @@ export type ProcessStep = {
   step: string;
   title: string;
   description: string;
-  icon: "signup" | "funds" | "service" | "order";
+  icon: string;
   accent: string;
   featured?: boolean;
 };

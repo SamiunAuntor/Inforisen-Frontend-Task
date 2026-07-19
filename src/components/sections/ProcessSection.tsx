@@ -20,8 +20,8 @@ export function ProcessSection() {
           </h2>
         </div>
 
-        <div className="relative mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <div aria-hidden="true" className="absolute inset-x-0 top-[35px] hidden h-px bg-black/45 lg:block" />
+        <div className="relative mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <div aria-hidden="true" className="absolute inset-x-0 top-[35px] hidden h-px bg-black/45 xl:block" />
           {processSteps.map((item) => (
             <ProcessCard key={item.step} item={item} />
           ))}

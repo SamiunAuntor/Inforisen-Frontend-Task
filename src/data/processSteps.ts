@@ -6,7 +6,7 @@ export const processSteps: ProcessStep[] = [
     title: "SIGN UP FOR FREE",
     description:
       "Sign up for your account, fill in the required information, and get instant access to powerful social media growth services.",
-    icon: "signup",
+    icon: "/assets/process/process-sign-up.png",
     accent: "#dc7a35",
     featured: true,
   },
@@ -15,7 +15,7 @@ export const processSteps: ProcessStep[] = [
     title: "Add Funds",
     description:
       "Securely add funds to your account using your preferred payment method and keep your balance ready for instant orders.",
-    icon: "funds",
+    icon: "/assets/process/process-add-funds.png",
     accent: "#bd3435",
   },
   {
@@ -23,7 +23,7 @@ export const processSteps: ProcessStep[] = [
     title: "Select Service",
     description:
       "Browse our wide range of social media services, choose the platform and package that fits your goals, then proceed with confidence.",
-    icon: "service",
+    icon: "/assets/process/process-select-service.png",
     accent: "#842044",
   },
   {
@@ -31,7 +31,7 @@ export const processSteps: ProcessStep[] = [
     title: "Place your order",
     description:
       "Enter your target link, confirm your order, and watch your social media growth begin with fast, reliable delivery.",
-    icon: "order",
+    icon: "/assets/process/process-place-order.png",
     accent: "#35125c",
   },
 ];

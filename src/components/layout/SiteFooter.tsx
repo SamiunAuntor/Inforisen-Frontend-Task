@@ -38,9 +38,17 @@ export function SiteFooter() {
                   <a
                     href={social.href}
                     aria-label={social.label}
-                    className="grid size-10 place-items-center rounded-lg border border-[#f47b20]/25 bg-white/10 transition duration-200 hover:-translate-y-0.5 hover:border-[#f47b20]/70 hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f47b20]"
+                    className="grid size-10 place-items-center rounded-lg bg-[linear-gradient(145deg,#be08c8_0%,rgba(255,255,255,0.5)_42%,#040102_58%,#c84208_100%)] p-px shadow-[0_5px_12px_rgba(0,0,0,0.28)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                   >
-                    <Image src={social.icon} alt="" width={22} height={22} />
+                    <span className="relative grid size-full place-items-center rounded-[7px] bg-[rgba(31,29,29,0.91)] backdrop-blur-[10px]">
+                      <Image
+                        src={social.icon}
+                        alt=""
+                        width={20}
+                        height={20}
+                        className="size-5 object-contain"
+                      />
+                    </span>
                   </a>
                 </li>
               ))}
