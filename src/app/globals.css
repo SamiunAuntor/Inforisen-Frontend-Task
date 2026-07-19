@@ -6,6 +6,7 @@
   --body-text: #494949;
   --primary: #f47b20;
   --container-width: 1320px;
+  --page-width: 2000px;
 }
 
 @theme inline {

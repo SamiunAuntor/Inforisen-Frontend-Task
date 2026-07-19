@@ -4,7 +4,7 @@ import { GoogleReviewBadge } from "./GoogleReviewBadge";
 
 export function HeroVisual() {
   return (
-    <div className="relative mx-auto h-[500px] w-full max-w-[648px] sm:h-[588px] lg:h-[588px]">
+    <div className="relative mx-auto h-[500px] w-full max-w-[648px] sm:h-[588px] lg:h-[588px] xl:mx-0 xl:w-[648px] xl:shrink-0">
       <div className="absolute left-[2%] top-[10%] z-20 size-9 sm:-left-[2%] sm:top-[12%] sm:size-10 lg:-left-[13.3%] lg:top-[3.5%]">
         <Image
           src="/assets/hero/skill-icons_instagram.png"

@@ -35,12 +35,14 @@ export function PromotionCarousel() {
     <div className="mt-14">
       <div
         ref={trackRef}
-        className="mx-4 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 [scrollbar-width:none] md:mx-6 xl:mx-12 xl:gap-8 [&::-webkit-scrollbar]:hidden"
+        className="mx-4 snap-x snap-mandatory overflow-x-auto pb-4 [scrollbar-width:none] md:mx-6 xl:mx-12 [&::-webkit-scrollbar]:hidden"
         onScroll={syncActivePage}
       >
-        {promotionServices.map((service) => (
-          <PromotionCard key={service.name} service={service} />
-        ))}
+        <div className="flex w-max min-w-full justify-center gap-5 xl:gap-8">
+          {promotionServices.map((service) => (
+            <PromotionCard key={service.name} service={service} />
+          ))}
+        </div>
       </div>
 
       <div className="mt-7 flex items-center justify-center gap-1.5" aria-label="Promotion carousel pages">
