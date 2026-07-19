@@ -7,10 +7,10 @@ type ProcessCardProps = {
 
 export function ProcessCard({ item }: ProcessCardProps) {
   return (
-    <article className="relative pt-[98px] transition-transform duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none supports-[hover:hover]:hover:-translate-y-1">
-      <div className="absolute left-1/2 top-[35px] z-10 h-16 w-px -translate-x-1/2" style={{ backgroundColor: item.accent }} />
+    <article className="relative mx-auto w-full max-w-[318px] pt-[88px] transition-transform duration-300 sm:pt-[98px] motion-reduce:transition-none motion-reduce:hover:transform-none supports-[hover:hover]:hover:-translate-y-1">
+      <div className="absolute left-1/2 top-[31px] z-10 h-14 w-px -translate-x-1/2 sm:top-[35px] sm:h-16" style={{ backgroundColor: item.accent }} />
       <div
-        className="absolute left-1/2 top-[7px] z-20 flex h-10 w-[84px] -translate-x-1/2 -rotate-[28deg] items-center justify-center rounded-full text-xs font-medium text-white shadow-sm"
+        className="absolute left-1/2 top-[5px] z-20 flex h-9 w-[76px] -translate-x-1/2 -rotate-[28deg] items-center justify-center rounded-full text-[11px] font-medium text-white shadow-sm sm:top-[7px] sm:h-10 sm:w-[84px] sm:text-xs"
         style={{ backgroundColor: item.accent }}
       >
         {item.step}

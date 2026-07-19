@@ -6,7 +6,7 @@ export function ServicesSection() {
   return (
     <section
       id="services"
-      className="bg-[#fff9f3] pb-20 pt-10 sm:pb-24 sm:pt-12 lg:pb-[100px] lg:pt-[50px]"
+      className="bg-[#fff9f3] pb-16 pt-8 sm:pb-20 sm:pt-10 lg:pb-24 lg:pt-12 xl:pb-[100px] xl:pt-[50px]"
     >
       <Container>
         <div className="mx-auto max-w-[960px] text-center">
@@ -20,7 +20,7 @@ export function ServicesSection() {
             />
             our services
           </p>
-          <h2 className="mt-6 font-outfit text-3xl font-semibold tracking-[-0.02em] text-foreground sm:text-[40px]">
+          <h2 className="mt-5 font-outfit text-[28px] font-semibold leading-tight tracking-[-0.02em] text-foreground sm:mt-6 sm:text-[36px] lg:text-[40px]">
             Powerful SMM Services for Fast Growth
           </h2>
           <p className="mx-auto mt-6 max-w-[920px] text-sm leading-6 text-body-text sm:text-base">

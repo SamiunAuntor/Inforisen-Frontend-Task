@@ -6,9 +6,9 @@ export function HeroSection() {
   return (
     <main id="home" className="relative z-20">
       <Container>
-        <div className="grid items-center gap-10 pb-16 pt-14 md:pb-20 md:pt-20 lg:grid-cols-2 lg:gap-6 lg:pb-24 lg:pt-16 xl:grid-cols-[528px_648px] xl:justify-between xl:gap-x-0 xl:pt-[100px]">
-          <div className="w-full max-w-[528px] xl:w-[528px] xl:shrink-0">
-            <h1 className="max-w-[528px] font-sans text-[clamp(2.35rem,4vw,3rem)] font-bold leading-[1.08] tracking-[-0.025em] text-foreground">
+        <div className="grid items-center gap-8 pb-10 pt-10 sm:gap-10 sm:pb-14 sm:pt-14 md:pb-16 md:pt-16 lg:grid-cols-2 lg:gap-6 lg:pb-20 lg:pt-16 xl:grid-cols-[528px_648px] xl:justify-between xl:gap-x-0 xl:pb-24 xl:pt-[100px]">
+          <div className="order-2 w-full max-w-[528px] lg:order-1 xl:w-[528px] xl:shrink-0">
+            <h1 className="max-w-[528px] font-sans text-[clamp(2rem,7.5vw,3rem)] font-bold leading-[1.08] tracking-[-0.025em] text-foreground">
               Grow Faster with SMM PANEL Across Every Social Platform
             </h1>
             <p className="mt-7 max-w-[528px] text-[15px] leading-[1.45] text-body-text sm:text-base">
@@ -19,7 +19,9 @@ export function HeroSection() {
             <LoginForm />
           </div>
 
-          <HeroVisual />
+          <div className="order-1 lg:order-2">
+            <HeroVisual />
+          </div>
         </div>
       </Container>
     </main>

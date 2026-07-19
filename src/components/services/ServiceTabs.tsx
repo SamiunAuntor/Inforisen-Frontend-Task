@@ -14,7 +14,7 @@ export function ServiceTabs() {
       <div
         role="tablist"
         aria-label="Social media services"
-        className="mt-14 grid w-full grid-cols-2 gap-x-3 gap-y-4 sm:grid-cols-3 lg:grid-cols-6"
+        className="mt-10 grid w-full grid-cols-1 gap-3 min-[430px]:grid-cols-2 sm:mt-12 sm:grid-cols-3 lg:mt-14 lg:grid-cols-6 lg:gap-x-3 lg:gap-y-4"
       >
         {platformServices.map((service) => {
           const isActive = service.id === activeId;
@@ -27,7 +27,7 @@ export function ServiceTabs() {
               id={`service-tab-${service.id}`}
               aria-selected={isActive}
               aria-controls="service-panel"
-              className={`flex h-14 items-center justify-center gap-3 rounded-xl border px-3 py-2 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary lg:text-base ${isActive ? "border-[#efb83a] bg-gradient-to-r from-[#f3bd35] via-[#d44b59] to-[#35125d] text-white shadow-[0_4px_10px_rgba(55,24,45,0.12)]" : "border-[#ef8d3d] bg-white text-foreground hover:bg-orange-50"}`}
+              className={`flex h-14 min-w-0 items-center justify-center gap-2 rounded-xl border px-2 py-2 text-sm font-semibold transition sm:gap-3 sm:px-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary lg:text-base ${isActive ? "border-[#efb83a] bg-gradient-to-r from-[#f3bd35] via-[#d44b59] to-[#35125d] text-white shadow-[0_4px_10px_rgba(55,24,45,0.12)]" : "border-[#ef8d3d] bg-white text-foreground hover:bg-orange-50"}`}
               onClick={() => setActiveId(service.id)}
             >
               {service.icon ? (
@@ -43,7 +43,7 @@ export function ServiceTabs() {
                   {service.fallbackIcon}
                 </span>
               )}
-              <span className="truncate">{service.name}</span>
+              <span className="min-w-0 truncate">{service.name}</span>
             </button>
           );
         })}

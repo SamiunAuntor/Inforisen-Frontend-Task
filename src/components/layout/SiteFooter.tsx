@@ -16,8 +16,8 @@ export function SiteFooter() {
         className="pointer-events-none object-cover object-bottom"
       />
 
-      <Container className="relative z-10 py-16 md:py-20 xl:pt-[86px] xl:pb-[80px]">
-        <div className="grid gap-12 md:grid-cols-2 xl:grid-cols-[1.65fr_0.85fr_0.95fr_1.05fr] xl:gap-20">
+      <Container className="relative z-10 py-14 sm:py-16 md:py-20 xl:pt-[86px] xl:pb-[80px]">
+        <div className="grid gap-10 sm:grid-cols-2 md:gap-12 xl:grid-cols-[1.65fr_0.85fr_0.95fr_1.05fr] xl:gap-20">
           <div>
             <a
               href="#home"
@@ -77,7 +77,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 flex min-h-[70px] items-center justify-center rounded-[20px] border border-white/25 bg-white/[0.07] px-5 py-4 text-center text-sm leading-6 text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.14),0_12px_35px_rgba(0,0,0,0.2)] backdrop-blur-[10px] xl:mt-10">
+        <div className="mt-10 flex min-h-[70px] items-center justify-center rounded-[16px] border border-white/25 bg-white/[0.07] px-4 py-4 text-center text-xs leading-5 text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.14),0_12px_35px_rgba(0,0,0,0.2)] backdrop-blur-[10px] sm:rounded-[20px] sm:px-5 sm:text-sm sm:leading-6 xl:mt-10">
           © 2026 HQ Promo. We are not affiliated with any social media platforms mentioned on this
           website. We only provide social media marketing services.
         </div>

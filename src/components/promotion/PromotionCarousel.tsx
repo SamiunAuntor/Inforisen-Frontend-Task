@@ -32,7 +32,7 @@ export function PromotionCarousel() {
   };
 
   return (
-    <div className="mt-14">
+    <div className="mt-10 sm:mt-12 xl:mt-14">
       <div
         ref={trackRef}
         className="mx-4 snap-x snap-mandatory overflow-x-auto pb-4 [scrollbar-width:none] md:mx-6 xl:mx-12 [&::-webkit-scrollbar]:hidden"

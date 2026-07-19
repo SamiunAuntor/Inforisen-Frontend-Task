@@ -7,7 +7,7 @@ type PromotionCardProps = {
 
 export function PromotionCard({ service }: PromotionCardProps) {
   return (
-    <article className="flex h-[320px] w-[250px] shrink-0 snap-start flex-col items-center rounded-2xl border border-black/10 bg-white px-5 pb-5 pt-6 text-center shadow-[0_4px_14px_rgba(35,25,20,0.1)] sm:w-[300px] xl:h-auto xl:w-[min(405px,calc((100vw-176px)/4.5))] xl:aspect-[356/405] xl:px-6 xl:pb-7 xl:pt-10">
+    <article className="flex h-[310px] w-[244px] shrink-0 snap-start flex-col items-center rounded-2xl border border-black/10 bg-white px-4 pb-4 pt-5 text-center shadow-[0_4px_14px_rgba(35,25,20,0.1)] min-[375px]:w-[260px] sm:h-[320px] sm:w-[300px] sm:px-5 sm:pb-5 sm:pt-6 xl:h-auto xl:w-[min(405px,calc((100vw-176px)/4.5))] xl:aspect-[356/405] xl:px-6 xl:pb-7 xl:pt-10">
       <Image
         src={service.image}
         alt=""
