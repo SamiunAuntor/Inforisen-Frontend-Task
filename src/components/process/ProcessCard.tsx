@@ -27,7 +27,7 @@ export function ProcessCard({ item }: ProcessCardProps) {
         >
           <path
             d="M0 0H318V58C276 137 224 190 159 190C94 190 42 137 0 58V0Z"
-            fill={item.featured ? "rgba(8,8,8,0.42)" : "#f3f3f4"}
+            fill={item.featured ? "rgba(255,255,255,0.1)" : "#f3f3f4"}
           />
         </svg>
         <Image

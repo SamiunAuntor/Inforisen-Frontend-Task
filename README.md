@@ -1,37 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Inforisen Frontend Task
 
-## Getting Started
+A responsive SMM Panel landing page recreated from the supplied desktop Figma design for the Inforisen Frontend Intern assessment.
 
-First, run the development server:
+**Live site:** [inforisen-frontend-task.vercel.app](https://inforisen-frontend-task.vercel.app/)
+
+The page includes a responsive navigation menu, authentication form UI, reusable promotional-service carousel, about section, interactive platform tabs, working-process cards, and footer. Mobile and tablet layouts were inferred from the desktop design while preserving its visual language.
+
+## Stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- `next/font` with Inter, Outfit, Geist, and Manrope
+- Lucide React icons
+
+## Highlights
+
+- Responsive from 320px mobile screens through wide desktop displays
+- Reusable, typed components and content data
+- Native horizontal carousel without an external slider library
+- Optimized raster images through `next/image`
+- Accessible navigation, controls, links, and form fields
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Validation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+## Structure
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# Inforisen-Frontend-Task" 
+- `src/app` — application shell, page composition, and global styles
+- `src/components` — section, layout, feature, and shared UI components
+- `src/data` — typed navigation and landing-page content
+- `src/types` — shared content types
+- `public/assets` — section-specific and shared design assets
