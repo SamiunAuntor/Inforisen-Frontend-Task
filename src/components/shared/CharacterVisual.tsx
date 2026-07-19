@@ -18,7 +18,7 @@ export function CharacterVisual({
 
       <div className="absolute -top-[3%] bottom-[19%] left-[9.5%] right-[32.7%] z-10 overflow-hidden">
         <Image
-          src="/assets/characters/hero-person.webp"
+          src="/assets/hero/hero-person.webp"
           alt="Young social media creator"
           fill
           preload={preload}
@@ -33,7 +33,7 @@ export function CharacterVisual({
 
       <div className="absolute bottom-[13.5%] right-[27%] z-40 h-[34%] w-[21%] rotate-[30deg]">
         <Image
-          src="/assets/decorations/rocket.webp"
+          src="/assets/hero/rocket.webp"
           alt=""
           fill
           sizes="140px"

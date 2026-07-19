@@ -1,0 +1,68 @@
+import type { PromotionService } from "@/types/content";
+
+export const promotionServices: PromotionService[] = [
+  {
+    name: "Twitter",
+    price: "$189.95 per month",
+    description: "500 to 5,000 followers, likes, and retweets",
+    image: "/assets/social/twitter.webp",
+    reviews: "2,725",
+    rating: 4,
+  },
+  {
+    name: "Instagram",
+    price: "$145.95 per month",
+    description: "10,000 real Instagram followers and real engagement",
+    image: "/assets/social/instagram.webp",
+    reviews: "2,725",
+    rating: 4,
+  },
+  {
+    name: "Facebook",
+    price: "$139.95 per month",
+    description: "1,000 to 10,000 real Facebook followers, likes, and video views",
+    image: "/assets/social/facebook.webp",
+    reviews: "2,725",
+    rating: 4,
+  },
+  {
+    name: "YouTube",
+    price: "$189.95 per month",
+    description: "220+ real YouTube subscribers, video views, over 3,000 dislikes, likes, and shares",
+    image: "/assets/social/youtube.webp",
+    reviews: "2,725",
+    rating: 4,
+  },
+  {
+    name: "Magazine Placement",
+    price: "$250.00",
+    description: "Full Page, Q&A Interview, Photo Shoot",
+    image: "/assets/promotion/magazine-placement.webp",
+    reviews: "2,725",
+    rating: 4,
+  },
+  {
+    name: "Blog Placement",
+    price: "$175.00",
+    description: "Featured editorial placement on established music and culture blogs",
+    image: "/assets/promotion/blog-placement.webp",
+    reviews: "2,725",
+    rating: 4,
+  },
+  {
+    name: "Radio Promotion",
+    price: "$199.95 per month",
+    description: "Targeted radio promotion and audience exposure",
+    image: "/assets/promotion/radio.webp",
+    reviews: "2,725",
+    rating: 4,
+  },
+  {
+    name: "Video Placement",
+    price: "$225.00",
+    description: "Professional video placement across selected media channels",
+    image: "/assets/promotion/video-placement.webp",
+    reviews: "2,725",
+    rating: 4,
+  },
+];

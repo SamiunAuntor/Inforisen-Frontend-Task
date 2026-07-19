@@ -9,7 +9,7 @@ export function TrustedUsersBadge() {
         {avatars.map((avatar) => (
           <Image
             key={avatar}
-            src={`/assets/avatars/trusted-avatar-${avatar}.webp`}
+            src={`/assets/hero/trusted-avatar-${avatar}.webp`}
             alt=""
             width={24}
             height={24}
